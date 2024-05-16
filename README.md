@@ -24,7 +24,8 @@ The figure below highlights the four different polyps and a normal patch, under 
 <div align="center">
   <img width="80%" alt="Design of all laboratory assignments" src="5ex_800.png">
 </div>
+
 ## :person_fencing: Patch extraction challenges
 ## :mag: Patch extraction code
-## Conda environment for patch extraction
-## Contact information
+## :computer: Conda environment for patch extraction
+## :mailbox_with_mail: Contact information
