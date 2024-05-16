@@ -35,6 +35,13 @@ A pathologist annotated some regions of interest in the slide using an annotatio
 
 ## :person_fencing: Patch extraction challenges
 ## :mag: Patch extraction code
+You will find the code for patch extraction in this [folder](patch-extraction).  
+To run an extraction, you can precise '--datafolder' where the WSIs are stored, the Field of View ('--fov') of extraction, the level of extraction ('--level' between 0 and 2), the output folder for your new dataset ('--output') and the '--size' under which the patches will be saved:
+```shell
+python3 extraction_huron.py --size 256 --fov 800 --level 1 --method overlap --output ./kgh_800
+```
+A basic '--threshold 50' for patch/ROI overlap is fixed '--method overlap' is chosen (default). By default, the background and noisy patches are not saved, you can activate the saving using '--save True' and these patches will be saved in specific background folders.  
+A [script](patch-extraction/extraction_script_example.sh) is given as an example.
 ## :computer: Conda environment for patch extraction
 To work in the environment supporting [TIAToolBox](https://github.com/TissueImageAnalytics/tiatoolbox) and PyTorch (2.2.1), you can download the conda configuration file and follow the instructions below:
 ```shell
