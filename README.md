@@ -27,6 +27,12 @@ The figure below highlights the four different polyps and a normal patch, under 
   <img width="80%" alt="Design of all laboratory assignments" src="5ex_800.png">
 </div>
 
+### Regions of interest (ROI) annotations
+A pathologist annotated some regions of interest in the slide using an annotation tool from [Huron Digital Pathology](https://www.hurondigitalpathology.com). It is important to highlight that regions outside ROIs cannot be considered as normal tissue regions nor as pathological regions. They contain normal tissue, distorted tissue and pathological tissue which have not been annotated. The figure below shows 5 WSIs from the 5 different classes with ROI annotations and patches extracted from a ROI when applicable.
+<div align="center">
+  <img width="70%" alt="Design of all laboratory assignments" src="ROIs_slides_patch.png">
+</div>
+
 ## :person_fencing: Patch extraction challenges
 ## :mag: Patch extraction code
 ## :computer: Conda environment for patch extraction
