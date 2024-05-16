@@ -4,7 +4,7 @@ The KinGston General (KGH) dataset for colorectal polyps classification consists
 ## :open_file_folder: Presentation of the dataset and its annotations
 KGH dataset requires 1.2 TB of storage. All slides are stored as .tif files presenting with 4 resolution levels: 20X, 5X, 1.25X and 0.3125X. The figure below shows the different downsampled levels as well as a ROI annotation. The resolution at 20X is of 0.4 mpp (microns per pixels). The tissue thickness in these slides is of 5 microns.  
 <div align="center">
-  <img width="40%" alt="Design of all laboratory assignments" src="pyramid_TVA75.png">
+  <img width="40%" alt="Design of all laboratory assignments" src="figures/pyramid_TVA75.png">
 </div>
 The polyps studied in this dataset are Sessile Serrated Lesions (SSL), Hyperplastic Polyps (HP), Tubulovillous Adenoma (TVA) and Tubular Adenoma (TA). This dataset is also presenting normal, or histological, colon tissues. One WSI can present multiple ROIs. The number of WSIs and annotations per class is given in the table below:
 
@@ -24,13 +24,13 @@ Four different types of colorectal polyps are studied in this dataset:
 -  **Tubulovillous Adenomas (TVA)**: TVAs are a subtype of colonic adenomas exhibiting a combination of tubular and villous features. Considered precancerous, they have the potential to transform into malignant structures. 
 The figure below highlights the four different polyps and a normal patch, under a Field of View (FoV) of 800x800 microns
 <div align="center">
-  <img width="80%" alt="Design of all laboratory assignments" src="5ex_800.png">
+  <img width="80%" alt="Design of all laboratory assignments" src="figures/5ex_800.png">
 </div>
 
 ### Regions of interest (ROI) annotations
 A pathologist annotated some regions of interest in the slide using an annotation tool from [Huron Digital Pathology](https://www.hurondigitalpathology.com). It is important to highlight that regions outside ROIs cannot be considered as normal tissue regions nor as pathological regions. They contain normal tissue, distorted tissue and pathological tissue which have not been annotated. The figure below shows 5 WSIs from the 5 different classes with ROI annotations and patches extracted from a ROI when applicable.
 <div align="center">
-  <img width="70%" alt="Design of all laboratory assignments" src="ROIs_slides_patch.png">
+  <img width="70%" alt="Design of all laboratory assignments" src="figures/ROIs_slides_patch.png">
 </div>
 
 ## :person_fencing: Patch extraction challenges
