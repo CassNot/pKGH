@@ -28,4 +28,13 @@ The figure below highlights the four different polyps and a normal patch, under 
 ## :person_fencing: Patch extraction challenges
 ## :mag: Patch extraction code
 ## :computer: Conda environment for patch extraction
+To work in the environment supporting [TIAToolBox](https://github.com/TissueImageAnalytics/tiatoolbox) and PyTorch (2.2.1), you can download the conda configuration file and follow the instructions below:
+```shell
+conda env create -f env.yml
+```
+Activate the environment:
+```shell
+conda activate tia-env
+```
 ## :mailbox_with_mail: Contact information
+For any questions, you can create an issue or send your question at [my courriel adress](mailto:cassandre.notton@mail.concordia.ca)
