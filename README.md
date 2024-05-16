@@ -11,6 +11,12 @@ The polyps studied in this dataset are Sessile Serrated Lesions (SSL), Hyperplas
 | Sessile Serrated Lesions (SSL) | 201 | 548 |
 | Tubular Adenoma (TA) | 207 | 465 |
 | Tubulovillous Adenoma (TVA) | 217 | 842 |
+### Studied colorectal polyps
+Four different types of colorectal polyps are studied in this dataset:
+- **Sessile Serrated Lesions (SSL)**: SSLs, a subtype of serrated polyps, constitute at least 20% of all serrated polyps. They are considered precancerous and are characterized by a flat or slightly elevated shape, predominantly found in the cecum and ascending colon. Distinguishing SSLs from hyperplastic polyps may pose challenges, although certain distortions can be recognized by pathologists;
+- **Hyperplastic Polyps (HP)**: These noncancerous growths carry a low risk of malignant transformation and are characterized by an overgrowth of normal cells in the mucosal lining of the colon or distal colon;
+- **Tubular Adenoma (TA)**: These are usually small and benign polyps, prevalent in more than 80% of cases. While they are considered precancerous, less than 10% of them have the potential to progress into cancer;
+-  **Tubulovillous Adenomas (TVA)**: TVAs are a subtype of colonic adenomas exhibiting a combination of tubular and villous features. Considered precancerous, they have the potential to transform into malignant structures. 
 ## :person_fencing: Patch extraction challenges
 ## :mag: Patch extraction code
 ## Conda environment for patch extraction
