@@ -7,6 +7,7 @@ KGH dataset requires 1.2 TB of storage. All slides are stored as .tif files pres
   <img width="40%" alt="Design of all laboratory assignments" src="pyramid_TVA75.png">
 </div>
 The polyps studied in this dataset are Sessile Serrated Lesions (SSL), Hyperplastic Polyps (HP), Tubulovillous Adenoma (TVA) and Tubular Adenoma (TA). This dataset is also presenting normal, or histological, colon tissues. One WSI can present multiple ROIs. The number of WSIs and annotations per class is given in the table below:
+
 | Class  | Number of WSIs | Number of ROIs |
 | ------------- | ------------- | ------------- |
 | Normal (histology)  | 200  | 0  |
@@ -14,6 +15,7 @@ The polyps studied in this dataset are Sessile Serrated Lesions (SSL), Hyperplas
 | Sessile Serrated Lesions (SSL) | 201 | 548 |
 | Tubular Adenoma (TA) | 207 | 465 |
 | Tubulovillous Adenoma (TVA) | 217 | 842 |
+
 ### Studied colorectal polyps
 Four different types of colorectal polyps are studied in this dataset:
 - **Sessile Serrated Lesions (SSL)**: SSLs, a subtype of serrated polyps, constitute at least 20% of all serrated polyps. They are considered precancerous and are characterized by a flat or slightly elevated shape, predominantly found in the cecum and ascending colon. Distinguishing SSLs from hyperplastic polyps may pose challenges, although certain distortions can be recognized by pathologists;
