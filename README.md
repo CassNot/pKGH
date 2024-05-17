@@ -68,6 +68,18 @@ dataset = pkgh(root_dir, split = 'train', ROI = False, balance = False, transfor
 ```
 if you want to use all images from ROI and nonROI, from the train set
 ## :person_fencing: Patch extraction challenges
+When having a closer look at our dataset (Figure below) , we remark than some slides have been annotated with a marker and contains either contours or handwritten annotations. 
+<div align="center">
+  <img width="50%" alt="Design of all laboratory assignments" src="figures/noise.png">
+</div>
+
+*The daset presents marker annotations*  
+The application of two state-of-the-art methods revealed limitations in our dataset. The handwritten annotations and inherent slide noise presented challenges for the various segmentation strategies employed. To address these issues, we developed a novel data processing approach specifically designed to mitigate the impact of noisy patches. The custom CNN to detect noisy patches is made of 3 convolutional layers followed by ReLU activation functions. It was trained for 20 epochs on a dataset of 8686 samples made of noisy patches (4475) and tissue patches (4211) extracted at different Fields of view
+<div align="center">
+  <img width="50%" alt="Design of all laboratory assignments" src="figures/CustomModel.png">
+</div>
+
+*Custom CNN*
 ## :mag: Patch extraction code
 You will find the code for patch extraction in this [folder](patch-extraction).  
 To run an extraction, you can precise `--datafolder` where the WSIs are stored, the Field of View (`--fov`) of extraction, the level of extraction (`--level` between 0 and 2), the output folder for your new dataset (`--output`) and the `--size` under which the patches will be saved:
