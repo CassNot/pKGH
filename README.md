@@ -33,6 +33,40 @@ A pathologist annotated some regions of interest in the slide using an annotatio
   <img width="70%" alt="Design of all laboratory assignments" src="figures/ROIs_slides_patch.png">
 </div>
 
+## :mega: Use the dataset in your own framework
+The dataset needs to be stored such as: 
+``` console
+root/
+├── train/
+│ ├── Normal/
+│ │ ├── NX-id-coords.png
+│ │ └── NX-id-coords.jpg
+| ├── CP_HP/
+│ │ │ ├── ROI
+| | │ │ ├── HPX-id-roi_id-coords.png
+│ | | │ └── HPX-id-roi_id-coords.jpg
+│ │ | ├── nonROI
+| | │ │ ├── HPX-id-coords.png
+│ | | │ └── HPX-id-coords.jpg
+│ ├── ...
+├── test/
+│ ├── Normal/
+│ │ ├── NX-id-coords.png
+│ │ └── NX-id-coords.jpg
+| ├── CP_HP/
+│ │ │ ├── ROI
+| | │ │ ├── HPX-id-roi_id-coords.png
+│ | | │ └── HPX-id-roi_id-coords.jpg
+│ │ | ├── nonROI
+| | │ │ ├── HPX-id-coords.png
+│ | | │ └── HPX-id-coords.jpg
+│ ├── ...
+```
+You can then call 
+```
+dataset = pkgh(root_dir, split = 'train', ROI = False, balance = False, transform = transform)
+```
+if you want to use all images from ROI and nonROI, from the train set
 ## :person_fencing: Patch extraction challenges
 ## :mag: Patch extraction code
 You will find the code for patch extraction in this [folder](patch-extraction).  
