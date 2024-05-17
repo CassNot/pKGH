@@ -62,7 +62,7 @@ root/
 │ | | │ └── HPX-id-coords.jpg
 │ ├── ...
 ```
-You can then call 
+You can then call [pkgh class](pkgh.py)
 ```
 dataset = pkgh(root_dir, split = 'train', ROI = False, balance = False, transform = transform)
 ```
